@@ -9,3 +9,7 @@ aks_id = "/subscriptions/8566b0af-f5ad-4983-ba3e-1d1955fade62/resourceGroups/pro
 aks_node_rg = "MC_prod_RG_ams_aks-cluster_uksouth"
 
 kubectl --kubeconfig .\kubeconfig get nodes
+NAME                             STATUS   ROLES   AGE   VERSION
+aks-system-65117156-vmss000000   Ready    agent   26m   v1.27.7
+aks-system-65117156-vmss000001   Ready    agent   26m   v1.27.7
+
