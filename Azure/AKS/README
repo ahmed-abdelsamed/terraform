@@ -1,0 +1,11 @@
+terraform fmt
+terraform init
+terraform validate
+terraform plan -out manin.tfplan
+terraform apply "manin.tfplan"
+------------------------------------------
+aks_fqdn = "aks-cluster-4esjh243.hcp.uksouth.azmk8s.io"
+aks_id = "/subscriptions/8566b0af-f5ad-4983-ba3e-1d1955fade62/resourceGroups/prod_RG_ams/providers/Microsoft.ContainerService/managedClusters/aks-cluster"
+aks_node_rg = "MC_prod_RG_ams_aks-cluster_uksouth"
+
+kubectl --kubeconfig .\kubeconfig get nodes
